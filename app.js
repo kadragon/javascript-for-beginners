@@ -1,13 +1,11 @@
-const a = 5;
-const b = 2;
-// camelCase
-let myName = "nico";
+const dayOfWeek = ["mon", "tue", "wed", "thu", "fri", "sat"];
 
-console.log(a + b);
-console.log(a * b);
-console.log(a / b);
-console.log("Hello " + myName);
+console.log(dayOfWeek);
 
-myName = "nicolas";
+// Get Item from Array
+console.log(dayOfWeek[4]);
 
-console.log("Your new name is " + myName);
+// Add one more day to the array
+dayOfWeek.push("sun");
+
+console.log(dayOfWeek);
