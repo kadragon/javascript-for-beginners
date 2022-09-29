@@ -1,8 +1,9 @@
-const player = {
-  name: "nico",
-  sayHello: function (otherPersonsName) {
-    console.log("Hello " + otherPersonsName + "nice to meet you!");
-  },
-};
+const age = 46;
 
-player.sayHello("lynn");
+function calculateKrAge(ageOfForeigner) {
+  return ageOfForeigner + 2;
+}
+
+const krAge = calculateKrAge(age);
+
+console.log(krAge);
