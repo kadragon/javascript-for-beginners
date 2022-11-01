@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Casino</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <form id="maxGuess-form">
+        <h1>Random Number Game</h1>
+        <h2>Generate a number between 0 and <input type="number" name="maxGuess" required minlength="0" /></h2>
+    </form>
+
+    <form id="player-form">
+        <p>Guess the number: <input type="number" name="guess" required minlength="0" /><button id="play">Play!</button>
+        </p>
+    </form>
+
+    <div class="hidden">
+        <p>You chose: <span id="playNumber"></span>, the machine chose: <span id="machineNumber"></span>.</p>
+        <p><strong id="result"></strong></p>
+    </div>
+
+    <script src="./js/casino.js" />
+</body>
+
+</html>
