@@ -1,6 +1,3 @@
-const maxNumber = document.querySelector("#maxGuess-form input");
-const playerNumber = document.querySelector("#player-form input");
-
 function display() {
   const target = document.querySelector(".hidden");
   if (target != null) {
@@ -17,7 +14,7 @@ function answer(a, b) {
 
   const result = document.querySelector("#result");
 
-  if (a == b) {
+  if (a === b) {
     result.innerText = "You won!";
   } else {
     result.innerText = "You lost!";
@@ -44,8 +41,6 @@ function handler(event) {
 
   const machineGuess = Math.round(Math.random() * maxNumber);
 
-  console.log(maxNumber, ":", playerNumber, ":", machineGuess);
-
   display();
   answer(playerNumber, machineGuess);
 }
@@ -53,5 +48,3 @@ function handler(event) {
 const playButton = document.querySelector("#play");
 
 playButton.addEventListener("click", handler);
-
-//Math.floor(Math.random() *
